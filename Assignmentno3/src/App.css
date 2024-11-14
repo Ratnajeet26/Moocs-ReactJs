@@ -1,0 +1,59 @@
+/* src/App.css */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.profile-page {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease; /* Added background-color transition */
+}
+
+.profile-page:hover {
+  transform: scale(
+    1.05
+  ); /* Slight zoom effect when hovering over the whole profile */
+  background-color: #f0f8ff; /* Light background color change on hover (light blue) */
+}
+
+.profile-picture img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom transition */
+}
+
+.profile-picture img:hover {
+  transform: scale(1.1); /* Zoom in effect on profile picture */
+}
+
+.profile-details h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+.profile-details h2:hover {
+  color: #007bff; /* Change color of the name on hover */
+}
+
+.profile-details p {
+  font-size: 1em;
+  color: #555;
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+.profile-details p:hover {
+  color: #007bff; /* Change color of email and bio on hover */
+}
